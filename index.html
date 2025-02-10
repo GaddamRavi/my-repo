@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ravi Gaddam </title>
+    <style>
+        :root {
+            --primary: #2A5C82;
+            --secondary: #39A2DB;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--secondary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Section Cards */
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        /* Experience Timeline */
+        .timeline-item {
+            border-left: 2px solid var(--secondary);
+            padding-left: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "◼";
+            color: var(--secondary);
+            position: absolute;
+            left: -10px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ravi Gaddam</h1>
+            <p>DevOps Engineer & Cloud Specialist</p>
+            <div>
+                 
+                <a href="https://www.linkedin.com/in/gaddam-ravi-6a2090228/" target="_blank"> LinkedIn  </a>
+                <a href="https://github.com/GaddamRavi" target="_blank">| GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="card">
+            <h2>Cloud & DevOps Specialist</h2>
+            <p> Computer Science graduate with a strong foundation in software development, DevOps, and cloud technologies. Skilled in Python, Linux
+                systems, and debugging. Experienced in deploying scalable applications, troubleshooting software performance, and integrating automation
+                tools to optimize efficiency. Passionate about developing innovative solutions and improving software reliability. Seeking an entry-level
+                Software Engineer role to contribute to cutting-edge technology solutions.</p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="card">
+            <h2>Professional Experience</h2>
+            <div class="timeline-item">
+                <h3>Realtime Embedded Systems Intern @ NSTL(DRDO)</h3>
+                <ul>
+                    <li>Implemented checksum validation for mission-critical data processing</li>
+                    <li>Developed troubleshooting protocols improving system reliability by 40%</li>
+                    <li>Conducted comprehensive subsystem testing for embedded systems</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>AWS Intern @ F13 Technologies</h3>
+                <ul>
+                    <li>Automated cloud infrastructure deployment using AWS services</li>
+                    <li>Reduced deployment times by 30% through workflow optimization</li>
+                    <li>Enhanced security with IAM roles and VPC policies</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="card">
+            <h2>Technical Projects</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>🚀 Kubernetes on AWS EKS</h3>
+                    <p>Managed 1000+ concurrent users with zero-downtime deployments</p>
+                </div>
+                <div class="skill-item">
+                    <h3>🛠 Terraform Infrastructure</h3>
+                    <p>Automated AWS provisioning with Infrastructure as Code</p>
+                </div>
+                <div class="skill-item">
+                    <h3>⚙ Jenkins CI/CD</h3>
+                    <p>Implemented automated build-test-deploy pipelines</p>
+                </div>
+                <div class="skill-item">
+                    <h3>☁ Serverless AWS Architecture</h3>
+                    <p>Built scalable solution with Lambda & DynamoDB</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="card">
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS, Kubernetes, Docker, Serverless</p>
+                </div>
+                <div class="skill-item">
+                    <h3>DevOps Tools</h3>
+                    <p>Terraform, Jenkins, Ansible, Git</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Programming</h3>
+                    <p>Python,Shell Scripting</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Networking / Operating Systems</h3>
+                    <p>TCP/IP, VPC, Computer networks ,linux, Windows</p>
+                </div>
+                 
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--dark); color: white; text-align: center; padding: 2rem;">
+        <div class="container">
+            <p>© 2025 Ravi Gaddam | 📍  India  |  gaddamravi616@gmail.com </p>
+            <p>AWS Certified Cloud Practitioner | CCNA Networking Specialist</p>
+        </div>
+    </footer>
+</body>
+</html>
